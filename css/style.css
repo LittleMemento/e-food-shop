@@ -10,4 +10,118 @@
 body {
   overflow-x: hidden;
   font-family: "Nunito", sans-serif;
+}
+
+.Navbar {
+  width: 100%;
+  padding: 0 200px;
+}
+.Navbar .nav_top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.Navbar .nav_top .btn_catolog {
+  display: flex;
+  align-items: center;
+  background-color: #ff0000;
+  border-radius: 30px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+.Navbar .nav_top .btn_catolog i {
+  font-size: 25px;
+  color: #ffffff;
+}
+.Navbar .nav_top .btn_catolog small {
+  font-weight: 800;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.Navbar .nav_top .search {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.Navbar .nav_top .search input {
+  width: 100%;
+  outline: none;
+  padding: 15px 25px 15px 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.Navbar .nav_top .search i {
+  font-size: 22px;
+  color: #808080;
+  position: absolute;
+  right: 15px;
+}
+.Navbar .nav_top .deliver {
+  display: flex;
+  align-items: center;
+}
+.Navbar .nav_top .deliver .deliver_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px 0px 0px 16px;
+  background: rgba(255, 169, 0, 0.7);
+  padding: 10px 20px;
+}
+.Navbar .nav_top .deliver .deliver_left i {
+  font-size: 20px;
+  color: #ffffff;
+}
+.Navbar .nav_top .deliver .deliver_left b {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.Navbar .nav_top .deliver .deliver_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0px 16px 16px 0px;
+  background-color: #ffa900;
+  padding: 10px 20px;
+}
+.Navbar .nav_top .deliver .deliver_right h6 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+.Navbar .nav_top .deliver .deliver_right h5 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 1px;
+}
+.Navbar .nav_top .like_prof {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.Navbar .nav_top .like_prof i {
+  font-size: 20px;
+  color: #e1e1e1;
+  transition: 0.4s;
+}
+.Navbar .nav_top .like_prof:hover {
+  border-color: #ffa900;
+}
+.Navbar .nav_top .like_prof:hover i {
+  color: #ffa900;
 }/*# sourceMappingURL=style.css.map */

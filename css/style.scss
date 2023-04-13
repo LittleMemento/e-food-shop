@@ -1,1 +1,103 @@
-@import "../scss/global"
+@import "../scss/global";
+
+.Navbar {
+  width: 100%;
+  padding: 0 200px;
+  .nav_top {
+    width: 100%;
+    @include dcsb;
+    padding: 20px 0;
+    .btn_catolog {
+      @include dc;
+      background-color: $Danger;
+      border-radius: 30px;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      i {
+        font-size: 25px;
+        color: $Fair;
+      }
+      small {
+        font-weight: 800;
+        font-size: $XmiddleSize;
+        color: $Fair;
+        margin-left: 10px;
+      }
+    }
+    .search {
+      width: 20%;
+      @include dcsb;
+      position: relative;
+      input {
+        width: 100%;
+        outline: none;
+        padding: 15px 25px 15px 15px;
+        border: 1px solid #e1e1e1;
+        border-radius: 16px;
+        background-color: transparent;
+      }
+      i {
+        font-size: 22px;
+        color: $Silver;
+        position: absolute;
+        right: 15px;
+      }
+    }
+    .deliver {
+      @include dc;
+      .deliver_left {
+        @include dfdc;
+        border-radius: 16px 0px 0px 16px;
+        background: rgba(255, 169, 0, 0.7);
+        padding: 10px 20px;
+        i {
+          font-size: 20px;
+          color: $Fair;
+        }
+        b {
+          font-weight: 400;
+          font-size: $XmiddleSize;
+          color: $Fair;
+        }
+      }
+      .deliver_right {
+        @include dfds;
+        border-radius: 0px 16px 16px 0px;
+        background-color: $Warning;
+        padding: 10px 20px;
+        h6 {
+          font-weight: 400;
+          font-size: $XXmiddleSize;
+          color: $Fair;
+        }
+        h5 {
+          font-weight: 700;
+          font-size: $XmiddleSize;
+          color: $Fair;
+          margin-top: 1px;
+        }
+      }
+    }
+    .like_prof {
+      width: 50px;
+      height: 50px;
+      @include dcc;
+      border: 1px solid $Light;
+      border-radius: 16px;
+      transition: 0.4s;
+      cursor: pointer;
+      i {
+        font-size: 20px;
+        color: $Light;
+        transition: 0.4s;
+      }
+      &:hover {
+        border-color: $Warning;
+        i {
+          color: $Warning;
+        }
+      }
+    }
+  }
+}
